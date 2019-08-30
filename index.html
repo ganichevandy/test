@@ -1,14 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello!!!</title>
+	<title>Повторение</title>
+	<style type="text/css">
+		h1 {
+			background: #D9B5D2;
+			color: #00146A;
+		}
+		* {
+			background: #8CC96C;
+		}
+		#shrift {
+			background: #D5E163;
+			border: 3px solid #0155DC;
+		}
+		#shrift * {
+			background: #67D6DC;
+			color: white;
+			
+		}
+		#shrift li {
+			border: 1px solid #0155DC;
+		}
+		form {
+			border: 3px solid black;
+		}
+		form input {
+			border: 1px solid black;
+		}
+		#sub {
+			background: red;
+		}
+	</style>
 </head>
 <body>
-	<h1>Hello!!!</h1>
-	<p style="color: red; background: blue;">How are you, Andrey?!</p>
-	
+	<h1 id="h1">Повторение HTML</h1>
+
+	<ol> 
+		<li><a href="#table"><h3>Таблица:</h3></a></li>
+
+		<li><h3>Формат текста:</h3>
+			<ul id="shrift">
+				<li><b>Жирный</b></li>
+				<li><i>Курсив</i></li>
+				<li><em>Важное</em> слово</li>
+				<li><u>Подчёркнутый</u></li>
+				<li><s>Зачёркнутый</s></li>
+				<li>Три в квадрате: 3<sup>2</sup></li>
+				<li>Формула воды: H<sub>2</sub>O</li>
+
+			</ul>
+		</li>
+		<li>
+			<h3>Картинки:</h3>
+			<img src="../images/3.jpg" width="200" alt="Картина Копейкина">
+		</li>
+		<li>
+			<h3>Ссылки:</h3>
+			<ul>
+				<li>
+					<a href="1.html">Будьте вы прокляты!</a>
+				</li>
+				<li>
+					<a href="2.html">Я тебя съем!</a>
+				</li>
+				<li>
+					<a href="3.html">Открыть: <img src="../images/3.jpg" width="100"></a>
+				</li>
+			</ul>
+
+		</li>
+		
+
+		<li>
+			<h3>Формы:</h3>
+
+		
+	<!-- ________________ФОРМЫ начало_________________ -->
+	<form>
+		<label>
+			<p>Имя: <input required placeholder="Ваше имя" type="text" name="name"></p>
+		</label>
+		<label>
+			<p>Фамилия: <input required placeholder="Ваша фамилия" type="text" name="name"></p>
+		</label>
+		<p>
+			<label for="email">
+				Email:
+			</label>
+			<input id="email" required placeholder="Ваш email" type="email" name="email">
+		</p>
+		<p>
+			<label for="m">
+				Муж:				
+			</label>
+			<input id="m" type="radio" name="sex">
+		</p>
+		<p>
+			<label for="w">
+				Жен:
+			</label>
+			<input id="w" type="radio" name="sex">
+		</p>
+		<p>
+			<label for="password">
+				Пароль:
+			</label>
+			<input id="password" required placeholder="Ваш Пароль" type="password" name="password">
+		</p>
+		<p>
+			<label for="save">
+				Запомнить пароль:
+			</label>
+			<input id="save" type="checkbox" name="checkbox">
+		</p>
+		<p>
+			<label for="sub">
+				Отправить данные
+			</label>
+			<input id="sub" type="submit" name="submit">
+		</p>
+	</form>
+		</li>
+	</ol>
 
 
+	<!-- ___________ФОРМЫ конец______________ -->
+
+
+	<!--    ______ТАБЛИЦА начало______          -->
+
+	<h3>Таблица:</h3>
+	<table border="1" id="table">
+			<thead>
+				<tr>
+					<th>Фамилия</th>
+					<th>Город</th>
+					<th>Возраст</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ганичева</td>
+					<td>Минск</td>
+					<td>10 лет</td>
+				</tr>
+				<tr>
+					<td>Никифорова</td>
+					<td>Колодищи</td>
+					<td>74 года</td>
+				</tr>
+			</tbody>
+	</table>
+	<a href="#h1">Начало -->></a>	
+
+	<!--    ____________ТАБЛИЦА конец______________   -->
 
 </body>
 </html>
